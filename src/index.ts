@@ -26,7 +26,7 @@ app.delete("/api/skill/:id", skillController.delete);
 app.put("/api/skill", skillController.update);
 
 app.post("/api/grade", gradeController.create);
-app.get("/api/grade", gradeController.read);
+// app.get("/api/grade", gradeController.read);
 
 app.use((req: Request, res: Response, next) => {
   res.status(404).send("Sorry can't find that!");
